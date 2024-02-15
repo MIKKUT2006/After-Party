@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Planer
+  - ForestDoorCrate
+  - Crate
+  - Bomb
+  - CityKey
+  - RotateZone
+  - Key
+  - SoulElevator
+  - Crystal
+  - Drone
+  - Fabric
+  - Forest
+  - Blue Wire
+  - Red Wire
+  - White Wire
+  - Boomstick
+  - BoomstickItem
+  - Panic
+  - Plains
+  - Happy crystal
+  - Mind
+  - MinecartDeathZone
+  - time
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - BackgroundOne
+  - Plants
+  - Ground
+  - Spikes
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: UI (User)
+    uniqueID: 772989345
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: NoLight
+    uniqueID: 3313024317
+    locked: 0
+  - name: Plants
+    uniqueID: 910338453
+    locked: 0
+  - name: Forest Particles
+    uniqueID: 2926848093
+    locked: 0
