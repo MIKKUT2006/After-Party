@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Lever : MonoBehaviour
@@ -8,14 +9,23 @@ public class Lever : MonoBehaviour
     [SerializeField] private AudioSource opensound;
     private bool isHorizontal = false;
     private int coordinates = 30;
+    private Vector2 newdoorPosition;
 
     private bool isOpen = false;
     private void FixedUpdate()
     {
-        if (isHorizontal == true && coordinates > 0)
+        //if (isHorizontal == true && coordinates > 0)
+        //{
+
+        //    coordinates--;
+        //}
+
+        if (isOpen == true)
         {
-            
-            coordinates--;
+            if (forestDoor.transform.position.x != newdoorPosition.x)
+            {
+                forestDoor.transform.position = new Vector2(0.05f * Time.deltaTime, forestDoor.transform.position.y);
+            }
         }
     }
 
@@ -23,8 +33,9 @@ public class Lever : MonoBehaviour
     {
         if (collision.CompareTag("Player") && isOpen == false)
         {
+            newdoorPosition.x = forestDoor.transform.position.x + 0.4f;
             isOpen = true;
-            Destroy(forestDoor);
+            //Destroy(forestDoor);
             Vector3 scaler = transform.localScale;
 
             scaler.x *= -1;
